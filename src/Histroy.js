@@ -1,19 +1,19 @@
 import React , {useContext} from 'react'
-import {GlobalContext, GlobalProvider} from './Context/GlobalState'
+import {GlobalContext} from './GlobalState'
+import Transaction from './Transaction'
 
 
  function Histroy() {
-     const context=useContext(GlobalProvider);
-     console.log(context);
+     const {transactions}=useContext(GlobalContext);
+     
     return (
         <div>
             <h3>
                 Histroy
             </h3>
             <ul className="list">
-                <li className="minus">
-                    Cash<span>-$0.00</span><button className="delete-btn">X</button>
-                </li>
+                {transactions.map(transactions=>(<Transaction key={transactions.id} transactions={transactions} />))}
+                
             </ul>
             
         </div>
