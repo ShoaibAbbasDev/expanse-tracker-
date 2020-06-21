@@ -7,7 +7,7 @@ import {GlobalContext} from './GlobalState'
     const [amount,setAmount]=useState(0);
     const {addTransaction}=useContext(GlobalContext);
     const onSubmit = e =>{
-        e.prenventDefault();
+        //e.prenventDefault();
 
         const newTransaction={
             id:  Math.floor(Math.random() * 10000000),
@@ -30,7 +30,7 @@ import {GlobalContext} from './GlobalState'
                     <label htmlFor="amount">Aomount<br></br>(negative  - expanse , positive - income)</label>
                     <input type="number" value={amount} onChange={(e)=>setAmount(e.target.value)} placeholder="Enter Amount" />
                 </div>
-                <button className="btn">Add Transaction</button>
+                <button className="btn" onClick={() => window.location.reload(false)} >Add Transaction</button>
             </form>
 
             
