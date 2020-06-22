@@ -11,6 +11,6 @@ export default(state,action)=>{
             transactions:[action.payload , ...state.transactions]
         }
         default:
-            return state
+            return state;
     }
 }
