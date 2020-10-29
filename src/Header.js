@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Header  () {
-    return (
+    return ( 
         <h2>
-            Expense Tracker
+            Expense Tracker App  //adding commemt expanse tracker app
         </h2>
     );
 }
