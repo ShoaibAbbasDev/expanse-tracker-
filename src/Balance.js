@@ -2,7 +2,7 @@ import React ,{useContext}from 'react'
 import {GlobalContext} from './GlobalState'
 
 function Balance(){
-    const {transactions}=useContext(GlobalContext);
+    const {transactions}=useContext(GlobalContext);  //use context hook
     const amounts=transactions.map(transactions=>(transactions.amount));
     const total=amounts.reduce((acc,item)=>(acc +=item),0).toFixed(2);
     return(
