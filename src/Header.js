@@ -1,10 +1,12 @@
 import React from 'react'
 
-function Header  () {
-    return (
-        <h2>
-            Expense Tracker
-        </h2>
-    );
+class Header extends React.Component {
+   render() {
+      return (
+         <div>
+            <h2>Expense Tracker</h2>
+         </div>
+      );
+   }
 }
 export default Header;
