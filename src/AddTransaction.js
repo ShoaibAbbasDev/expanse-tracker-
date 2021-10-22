@@ -14,6 +14,8 @@ function AddTransaction() {
 			amount: +amount,
 		};
 		addTransaction(newTransaction);
+		setText((text) => (text = ""));
+		setAmount((amount) => (amount = 0));
 	};
 
 	return (
