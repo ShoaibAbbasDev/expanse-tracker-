@@ -14,7 +14,9 @@ function AddTransaction() {
 			amount: +amount,
 		};
 		addTransaction(newTransaction);
+		// This line will set the state of the description field to the default value which is null.
 		setText((text) => (text = ""));
+		// This line will set the state of the Amount field to the default value which is 0.
 		setAmount((amount) => (amount = 0));
 	};
 
