@@ -2,9 +2,9 @@ import React from 'react'
 
 function Header  () {
     return ( 
-        <h2>
-            Expense Tracker App  //adding commemt expanse tracker app
-        </h2>
+        <h3>
+            Expense Tracker Application  //Adding Comment Expense Tracker Application
+        </h3>
     );
 }
 export default Header;
